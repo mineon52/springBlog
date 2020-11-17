@@ -8,20 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class HttpTestController {
 	private static final String TAG = "HttpTestController";
 	
+	
+	
 	@GetMapping("/http/lombok")
 	public String lombokTest() {
-		Member m = new Member(1,"ssar","1234","email@naver.com");
-		m.setId(555);
+		Member m = Member.builder().username("sss").passward("123").email("aa@naver.com").build();
+		
 		return TAG+ ":lombok "+m.getId()+m.getUsername()+m.getEmail();
 	}
 	
 	@GetMapping("/http/get")
 	public String getTest(Member m) {
-		return TAG + ":get 요청"+ m.getUsername() ;
+		m.setId(123);
+		return TAG + ":get 요청-"+m.getId();
 	}
 	@GetMapping("/http/post")
 	public String postTest(@RequestBody Member m) {
-		return TAG + ":post 요청"+ m.getId() + m.getPassward() ;
+		return TAG + ":post 요청-" +m.getId();
 	}
 	@GetMapping("/http/put")
 	public String putTest() {
