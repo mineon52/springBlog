@@ -1,8 +1,16 @@
 스프링부트 강좌 3강(블로그 프로젝트) 
 유튜브 - https://youtu.be/rpcoHCXgGnQ
 블로그 - https://getinthere.tistory.com/15
+-프로젝트생성
+	Spring Boot DevTools
+	Lombok
+	Spring Data JPA
+	Mysql Driver
+	Spring Security
+	Spring Web
+-추가라이브러리 
+	spring-security-taglibs
+	tomcat-jasper
+	jstl
 
-추가라이브러리 
-spring-security-taglibs
-tomcat-jasper
-jstl
+	

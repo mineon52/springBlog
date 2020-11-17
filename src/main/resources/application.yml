@@ -1,2 +1,7 @@
 server:
   port: 80
+spring:
+  mvc:
+    view:
+      prefix: WEB-INF/web/
+      suffix: .jsp
