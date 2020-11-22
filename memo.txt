@@ -15,5 +15,8 @@
 Lombok 설치 
 	C:\Users\sangy\.m2\repository\org\projectlombok\lombok\1.18.16>java -jar lombok-1.18.16.jar
 	
-집에서 저장함
+테이블생성확인
+	use blog;
+	select * from user;
+
 	

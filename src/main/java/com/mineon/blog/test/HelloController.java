@@ -11,5 +11,5 @@ public class HelloController {
 	public String hello() {
 		return "<h1>Hello Spring boot</h1> ";
 	}
-	
+
 }
